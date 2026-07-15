@@ -5,12 +5,18 @@
   "type": "module",
   "main": "./src/index.js",
   "exports": {
-    ".": "./src/index.js"
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
   },
   "files": [
     "src",
+    "types",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "test": "node --test tests/health.test.js",
@@ -39,5 +45,11 @@
   "homepage": "https://github.com/theinfyark/docker-health-check#readme",
   "engines": {
     "node": ">=18"
+  },
+  "types": "./types/index.d.ts",
+  "sideEffects": false,
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/anilachary"
   }
 }
