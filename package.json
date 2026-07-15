@@ -1,0 +1,43 @@
+{
+  "name": "docker-health-check",
+  "version": "1.0.0",
+  "description": "Docker/K8s-ready health checks for database, Redis, RabbitMQ, HTTP, disk, and memory.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/health.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "docker",
+    "health",
+    "healthcheck",
+    "kubernetes",
+    "redis",
+    "rabbitmq",
+    "database",
+    "devops",
+    "probe"
+  ],
+  "author": "anilachary",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theinfyark/docker-health-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theinfyark/docker-health-check/issues"
+  },
+  "homepage": "https://github.com/theinfyark/docker-health-check#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
