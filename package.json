@@ -1,6 +1,6 @@
 {
   "name": "docker-health-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Docker/K8s-ready health checks for database, Redis, RabbitMQ, HTTP, disk, and memory.",
   "type": "module",
   "main": "./src/index.js",
