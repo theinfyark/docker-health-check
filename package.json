@@ -1,6 +1,6 @@
 {
   "name": "docker-health-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Docker/K8s-ready health checks for database, Redis, RabbitMQ, HTTP, disk, and memory.",
   "type": "module",
   "main": "./src/index.js",
@@ -32,7 +32,15 @@
     "rabbitmq",
     "database",
     "devops",
-    "probe"
+    "probe",
+    "health-check",
+    "liveness",
+    "readiness",
+    "k8s",
+    "monitoring",
+    "express",
+    "nodejs",
+    "graceful-shutdown"
   ],
   "author": "anilachary",
   "license": "MIT",
