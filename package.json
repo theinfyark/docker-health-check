@@ -1,5 +1,5 @@
 {
-  "name": "docker-health-kit",
+  "name": "docker-health-check",
   "version": "1.0.2",
   "description": "Docker/K8s-ready health checks for database, Redis, RabbitMQ, HTTP, disk, and memory.",
   "type": "module",
@@ -24,6 +24,7 @@
     "prepublishOnly": "npm test"
   },
   "keywords": [
+    "docker-health-check",
     "docker",
     "health",
     "healthcheck",
