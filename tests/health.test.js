@@ -20,7 +20,7 @@ function listenTcp() {
   });
 }
 
-describe("docker-health-check", () => {
+describe("docker-health-kit", () => {
   it("returns booleans for configured checks", async () => {
     const { server, port } = await listenTcp();
 
