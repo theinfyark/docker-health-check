@@ -1,9 +1,9 @@
-# docker-health-check
+# docker-health-kit
 
 Docker / Kubernetes-ready **health checks** for cloud engineers.
 
 ```bash
-npm install docker-health-check
+npm install docker-health-kit
 ```
 
 ## Checks
@@ -29,7 +29,7 @@ npm install docker-health-check
 ## Quick start
 
 ```js
-import { healthCheck } from "docker-health-check";
+import { healthCheck } from "docker-health-kit";
 
 const result = await healthCheck({
   db: { host: "postgres", port: 5432 },
@@ -48,7 +48,7 @@ console.log(result);
 
 ```js
 import express from "express";
-import { healthHandler } from "docker-health-check";
+import { healthHandler } from "docker-health-kit";
 
 const app = express();
 
@@ -84,7 +84,7 @@ await healthCheck({
 
 ```dockerfile
 HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
-  CMD node -e "import('docker-health-check').then(async ({healthCheck})=>{const r=await healthCheck({redis:true,disk:true}); process.exit(r.healthy?0:1)})"
+  CMD node -e "import('docker-health-kit').then(async ({healthCheck})=>{const r=await healthCheck({redis:true,disk:true}); process.exit(r.healthy?0:1)})"
 ```
 
 ## Options
@@ -108,26 +108,26 @@ MIT
 
 ## Introduction
 
-**docker-health-check** helps you ship reliable Node.js / TypeScript applications with a small, focused API.
+**docker-health-kit** helps you ship reliable Node.js / TypeScript applications with a small, focused API.
 
 ## Why this package exists
 
-Popular stacks need small, trustworthy utilities with excellent DX. **docker-health-check** exists to solve one problem well: clear APIs, strong typing, minimal dependencies, and production-ready defaults — without the overhead of larger frameworks.
+Popular stacks need small, trustworthy utilities with excellent DX. **docker-health-kit** exists to solve one problem well: clear APIs, strong typing, minimal dependencies, and production-ready defaults — without the overhead of larger frameworks.
 
 ## Installation
 
 ```bash
-npm install docker-health-check
+npm install docker-health-kit
 # or
-pnpm add docker-health-check
-yarn add docker-health-check
+pnpm add docker-health-kit
+yarn add docker-health-kit
 ```
 
 Requires Node.js 18+.
 
 ## API Reference
 
-See the exports from `docker-health-check` and the inline TypeScript types for the full surface area. Primary entry points are documented in **Quick Start** and **Examples** above.
+See the exports from `docker-health-kit` and the inline TypeScript types for the full surface area. Primary entry points are documented in **Quick Start** and **Examples** above.
 
 ## Examples
 
@@ -146,7 +146,7 @@ Works with Express, Fastify, Hono, NestJS, and plain Node HTTP servers. Import E
 ## TypeScript Usage
 
 ```ts
-import { /* symbols */ } from "docker-health-check";
+import { /* symbols */ } from "docker-health-kit";
 ```
 
 Types ship with the package (`types` / `exports.types`). Enable `strict` in your `tsconfig` for the best DX.

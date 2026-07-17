@@ -1,12 +1,12 @@
-# Contributing to docker-health-check
+# Contributing to docker-health-kit
 
-Thanks for helping improve **docker-health-check**.
+Thanks for helping improve **docker-health-kit**.
 
 ## Development
 
 ```bash
-git clone https://github.com/theinfyark/docker-health-check.git
-cd docker-health-check
+git clone https://github.com/theinfyark/docker-health-kit.git
+cd docker-health-kit
 npm install
 npm test
 npm run build --if-present

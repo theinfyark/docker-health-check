@@ -1,6 +1,6 @@
 {
-  "name": "docker-health-check",
-  "version": "1.0.2",
+  "name": "docker-health-kit",
+  "version": "1.0.3",
   "description": "Docker/K8s-ready health checks for database, Redis, RabbitMQ, HTTP, disk, and memory.",
   "type": "module",
   "main": "./src/index.js",
@@ -24,7 +24,7 @@
     "prepublishOnly": "npm test"
   },
   "keywords": [
-    "docker-health-check",
+    "docker-health-kit",
     "docker",
     "health",
     "healthcheck",
@@ -47,12 +47,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theinfyark/docker-health-check.git"
+    "url": "git+https://github.com/theinfyark/docker-health-kit.git"
   },
   "bugs": {
-    "url": "https://github.com/theinfyark/docker-health-check/issues"
+    "url": "https://github.com/theinfyark/docker-health-kit/issues"
   },
-  "homepage": "https://github.com/theinfyark/docker-health-check#readme",
+  "homepage": "https://github.com/theinfyark/docker-health-kit#readme",
   "engines": {
     "node": ">=18"
   },
